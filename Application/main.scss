@@ -1,0 +1,352 @@
+@CHARSET "ISO-8859-1";
+
+@keyframes fadeOut{
+  0%{opacity: 1}
+  100%{opacity: 0}
+}
+
+@keyframes rotate {
+  0% { -webkit-transform: rotate(0deg); }
+  20% { -webkit-transform: rotate(90deg); }
+  25% { -webkit-transform: rotate(90deg); }
+  45% { -webkit-transform: rotate(180deg); }
+  50% { -webkit-transform: rotate(180deg); }
+  70% { -webkit-transform: rotate(270deg); }
+  75% { -webkit-transform: rotate(270deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes slide{
+  0% {left: 25px}
+  100% {left: -390px}
+}
+
+@keyframes slide2{
+  0% {left: 330px}
+  100% {left: 15px}
+}
+
+
+/*Attributs*/
+
+html,body{
+  background: linear-gradient(#232323, #161616);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow:scroll;
+  background-attachment : fixed;
+}
+
+h2{
+  cursor: pointer;
+  font-family: Sanchez;
+  color: white;
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+p, h1{
+  cursor: pointer;
+  font-family: Raleway;
+  color: white;
+}
+
+h3{
+  font-family: Raleway;
+  font-style: Light;
+  color: #FFF;
+  padding-top: 25px;
+  font-size: 16px;
+}
+
+/*ID*/
+#plex1niv2 table{
+  font-family: Raleway;
+  font-weight: lighter;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  top:0px;
+  z-index:1;
+  line-height:16px;
+}
+
+#plex1niv2 table tr td{
+  background: linear-gradient(#1F1F1F, #1B1B1B);
+  width: 100%;
+  height: 75px;
+  padding-left: 110px;
+}
+
+#plex1niv1 ul li{
+  background: linear-gradient(#1F1F1F, #1B1B1B);
+  width: 100%;
+  height: 150px;
+  font-family: Raleway;
+  font-weight: lighter;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  box-shadow: -1px 17px 22px 0px #181818;
+}
+
+#servers{
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      list-style-type: none;
+    }
+  }
+}
+
+#filters{
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+  font-family: Raleway medium;
+  color: #E78181;
+}
+
+#renderers{
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      list-style-type: none;
+      img{
+        max-width: 200px;
+      }
+    }
+  }
+}
+
+#next{
+  bottom: 18px;
+  position: fixed;
+  z-index: 9999;
+}
+
+#sound-cursor{
+  bottom: 117px;
+  position: fixed;
+  left: 21px;
+}
+
+#carouselicone{
+  display: block;
+  top: 22px;
+  left: 15px;
+  position: fixed;
+}
+
+#roue-player{
+  position:fixed;
+  left:0;
+  z-index: 0;
+}
+
+#center{
+  position:fixed;
+  left: 27%;
+  top: 35%;
+}
+
+#plexsongs{
+z-index:3333
+}
+
+#splash{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position:fixed;
+  background-image:url(img/accueil.png);
+  background-size: 100%;
+  background-repeat:no-repeat;
+  display: inline-block;
+  span{
+    cursor: pointer;
+  }
+}
+
+#tuto{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  position:fixed;
+  background: linear-gradient(#232323, #161616);
+  background-size: 100%;
+  background-repeat:no-repeat;
+  display: inline-block;
+
+  span{
+    cursor: pointer;
+  }
+}
+
+#swipe{
+  position:fixed;
+  left:20px;
+  top:140px;
+}
+#swipe2{
+  position:fixed;
+  left:330px;
+  top:140px;
+}
+
+#swipe3{
+  position:fixed;
+  left:340px;
+  top:140px;
+}
+
+#filtreserveur{
+  z-index: 9999;
+}
+
+/*CLASSES*/
+.décalage{
+    margin-top: 19px;
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(#1F1F1F, #1B1B1B);
+}
+
+.cover{
+    position: absolute;
+    margin: -10px -75px;
+}
+
+.serveurs{
+  position: fixed;
+  width: 100%;
+  left:150px;
+  top:80px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.up{
+  background-color: #282728;
+  width: 100%;
+  height: 12%;
+  box-shadow: 0 5px 15px -2px #181818;
+  position: fixed;
+  top:-20px;
+  display: inline;
+  z-index:3000;
+}
+
+.title{
+  position: fixed;
+  top: 55%;
+  text-align: center;
+  left: 80px;
+}
+
+.feedback{
+  position:absolute;
+}
+
+.cellule{
+    position: fixed;
+    bottom: 80px;
+    left: 40%;
+}
+
+//Code alphabétique//
+#liste{
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 14px;
+  z-index:9999;
+  position: fixed;
+  position: fixed;
+  line-height: 0.3;
+  right: 2px;
+  top: 64px;
+  cursor: pointer;
+
+  ul li a, ul li a:hover, ul li a:active, ul li a:visited
+  {
+    padding-top:50%;
+    display: block;
+    text-decoration:none;
+    color:#888888;
+    text-align:center;
+    width:30px;
+  }
+}
+
+
+.lettre{
+  font-family: Roboto;
+  font-weight: 900;
+  color: #42BCE4;
+  font-size: 36px;
+  z-index: 9999;
+  position:absolute;
+  margin: -17px -77px;
+}
+
+//Fin de ce code//
+
+
+/*Animation premier écran*/
+#splash {
+   -moz-animation: fadeOut 1s ease-in 3s forwards;
+   /* Firefox */
+   -webkit-animation: fadeOut 1s ease-in 3s forwards;
+   /* Safari and Chrome */
+   animation: fadeOut 1s ease-in 3s forwards;
+   -webkit-animation-fill-mode: forwards;
+   animation-fill-mode: forwards;
+   pointer-events: none;
+}
+
+.slide {
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+.slide2 {
+    animation-name: slide2;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+/*Typos*/
+@font-face {
+font-family: 'raleway';
+src: url('Raleway-Bold.ttf');
+src: url('Raleway-Light.ttf');
+src: url('Raleway-Regular.ttf');
+src: url('Raleway-Thin.ttf');
+}
+
+@font-face {
+font-family: 'sanchez';
+src: url('Sanchezregular.otf');
+}
+
+@font-face {
+  font-family: roboto;
+  src: url('Roboto-Regular.ttf');
+}

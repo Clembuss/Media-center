@@ -1,0 +1,186 @@
+/*Le code du cercle*/
+	/*MAIN CIRCLE*/
+	.circle
+	{
+	  position: fixed;
+	  width: 390px;
+	  height: 390px;
+	  border-radius: 50%;
+
+	  -webkit-transition: all 0.5s ease-in-out;
+	  -moz-transition: all 0.5s ease;
+	  -ms-transition: all 0.5s ease;
+	  -o-transition: all 0.5s ease;
+	  transition: all 0.5s ease-in-out;
+
+	}
+
+	/*LITTLE CIRCLES*/
+	.circle li  {
+
+	  position: absolute;
+	  width: 50px;
+	  height: 50px;
+	  border-radius: 50%;
+	  list-style-type: none;
+	  top: 0;
+	  left: 0;
+	}
+
+	.circle li:nth-child(1) {
+	  top: 210px;
+	  left: 332px;
+	}
+
+	.circle li:nth-child(2) {
+		top: 287px;
+		left: 286px;
+}
+/*.circle li:nth-child(2) a:link{
+	content: url('../img/2-1.png');
+	}*/
+
+
+	.circle li:nth-child(3) {
+	  top: 327px;
+	  left: 205px;
+	  -webkit-transform: rotate(180deg);
+	  -moz-transform: rotate(180deg);
+	  -ms-transform: rotate(180deg);
+	  -o-transform: rotate(180deg);
+	  transform: rotate(180deg);
+	}
+
+
+/*CERCLEFILTRES*/
+	/*MAIN CIRCLE*/
+	.circle2
+	{
+	  position: fixed;
+	  width: 390px;
+	  height: 390px;
+	  border-radius: 50%;
+		z-index: 2;
+
+	  -webkit-transition: all 0.5s ease;
+	  -moz-transition: all 0.5s ease;
+	  -ms-transition: all 0.5s ease;
+	  -o-transition: all 0.5s ease;
+	  transition: all 0.5s ease;
+
+		-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+	}
+
+	/*LITTLE CIRCLES FILTERS*/
+	.circle2 li  {
+
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		list-style-type: none;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+
+	.circle2 li:nth-child(1) {
+		top: 9px;
+    left: 166px;
+	}
+
+	.circle2 li:nth-child(2) {
+		top: 36px;
+    left: 72px;
+
+	}
+
+	.circle2 li:nth-child(3) {
+		top: 30px;
+    left: 263px;
+
+	}
+
+	.circle2 li:nth-child(4) {
+		top: 104px;
+    left: 324px;
+		-webkit-transform: rotate(270deg);
+		-moz-transform: rotate(270deg);
+		-ms-transform: rotate(270deg);
+		-o-transform: rotate(270deg);
+		transform: rotate(270deg);
+	}
+
+	.circle2 li:nth-child(5) {
+		top: 104px;
+		left: 15px;
+		-webkit-transform: rotate(270deg);
+		-moz-transform: rotate(270deg);
+		-ms-transform: rotate(270deg);
+		-o-transform: rotate(270deg);
+		transform: rotate(270deg);
+	}
+
+	/*Player*/
+	.circle3
+	{
+		position: fixed;
+		width: 390px;
+		height: 390px;
+		border-radius: 50%;
+		z-index: 0;
+
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease-in-out;
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+
+	}
+
+	.circle3 li  {
+
+		position: fixed;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		list-style-type: none;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+
+	.circle3 li:nth-child(1) {
+		top: 210px;
+		left: 332px;
+		z-index: 3;
+	}
+
+	.circle3 li:nth-child(2) {
+		top: 287px;
+		left: 286px;
+		z-index: 3;
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+
+	.circle3 li:nth-child(3) {
+		top: 327px;
+		left: 205px;
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}

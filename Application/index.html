@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>MC</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div id="splash">
+    <div style="top:150px;"><h2 style="text-align:center; margin-top:150px; font-size:40px;">Syncrowd</h2></div>
+    <div style="text-align:center"><img src="img/logo.png"/></div>
+    <div style="text-align:center;margin:auto; width:150px">
+      <h1 style="font-size:25px;">Bienvenue</h1>
+      <h1 style="font-size:12px">L'experience va commencer dans quelques secondes...</h1>
+    </div>
+  </div>
+
+  <div id="tuto">
+    <div style="top:150px;"><h2 style="text-align:center; margin-top:80px; font-size:24px;">Pour bien débuter</h2>
+    </div>
+    <div id="swipe"><img src="img/tuto1.png"/></div>
+    <div id="swipe2"><img src="img/tuto2.png"/></div>
+    <div id="swipe3"><img src="img/tuto3.png"/></div>
+    <div class="cellule"><img id="li1" src="img/li.png"/></div>
+    <div class="cellule"><img id="li2" src="img/li2.png"/></div>
+    <div class="cellule"><img id="li3" src="img/li3.png"/></div>
+  </div>
+
+<section id="servers">
+  <div id="hide-server">
+    <h2 style="position:fixed;left:10px; top:20px; z-index:2">Serveurs</h2>
+    <img style="position:fixed;left:0px; top:0px; z-index:0" src="img/Ellipse2.png"/>
+  </div>
+
+  <div id="listeservers" >
+    <ul class="serveurs">
+      <!-- <li><h3>Plex Media Server: RPI 3</h3></li> -->
+      <li><h3><strong>Plex</strong><br>Iphone de Hugo</h3></li>
+      <!-- <li><h3>MacBook Pro de Fanny</h3></li> -->
+    </ul>
+  </div>
+  <div id="center"><img class="feedback" src="img/center.png"/></div>
+
+  <!--Choix par rotation -->
+  <div style="width: 390px; height: 390px; position:fixed;top:-200px;left:-200px;" id="mainTarget">
+    <div class="circle"><span id="serveur-cercle">
+      <ul>
+        <li><img src="img/1.png"/></li>
+        <li><img class="feedback1" src="img/2.png"/></li>
+        <li><img src="img/3.png"/></li>
+      </ul>
+    </div>
+  </div>
+</span>
+
+<div style="width: 390px; height: 390px; position:fixed;top:380px;left:130px;z-index:1" id="mainTarget2">
+  <div class="circle3"><span id="serveur-cercle2">
+    <ul>
+      <li><img src="img/4.png"/></li>
+      <li><img class="feedback2" src="img/5.png"/></li>
+      <li><img src="img/6.png"/></li>
+    </ul>
+  </div>
+</div>
+</span>
+
+<section id="renderers">
+  <h2 style="position:fixed;right:10px; bottom:20px;">Players</h2>
+  <img style="position:fixed;right:0px; bottom:0px;" src="img/Ellipse.png"/>
+  <ul>
+    <li>
+      <h3 style="position:fixed; bottom: 120px; right:150px; text-align:right"><strong>KODI</strong><br>ASUS-X68</h3>
+    </li>
+  </ul>
+</section>
+
+<!-- niveau 1 des dossiers plex1 -->
+<div id="plex1niv1" class="hidden">
+  <ul>
+    <h3 class="up" style="color:#E78181; font-size:25px; text-align:center">
+      <img src="img/icone.png" style="position:fixed;left:15px;top:22px;" id="back-serveur"/>MÉDIAS</h3>
+      <h3 style="color:#E78181; text-align:center; margin-top:60px;">Iphone de Hugo</h3>
+      <li id="music">Musique <div style="margin-top:20px"><img src="img/filter.png"></div></li>
+      <div id="disparu">
+        <li>Images<div style="margin-top:20px" id="outside"><img src="img/filter.png"></div></li>
+        <li>Vidéos<div style="margin-top:20px"><img src="img/filter.png"></div></li>
+      </div>
+    </ul>
+  </div>
+
+  <!-- Choix des filtres sur niveau 1 -->
+  <div id="filters" class="hidden">
+    <!--Choix par rotation des filtres -->
+    <div style="width: 390px;height: 390px;position: fixed;left: -37px; z-index:9999;" id="mainTarget3">
+      <div class="circle2">
+        <ul>
+          <li id="plex1songs"><img src="img/2.png"/></li>
+          <li><img src="img/1.png"/></li>
+          <li><img src="img/1.png"/></li>
+          <li><img src="img/3.png"/></li>
+          <li><img src="img/3.png"/></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="position:relative; margin-top: 126.5px;z-index:1"><img src="img/rouefiltre.png"/></div>
+    <ul>
+      <!-- <li style="top: 136px;position: relative;">GENRES</li> -->
+      <li style="position:relative;margin-top:-50px;z-index:9999">ARTISTES</li>
+      <!-- <li style="top: 68px;position: relative;">ALBUMS</li>
+      <li style="top: 34px;position: relative;">MORCEAUX</li>
+      <li>PLAYLISTS</li> -->
+    </ul>
+
+  </div>
+
+
+  <!-- fin niveau 1 des dossiers plex1 -->
+
+
+  <!-- niveau 2 des dossiers plex1 -->
+  <div id="plex1niv2" class="hidden">
+    <h3 style="color:#E78181; font-size:25px; text-align:center" class="up">
+      <img src="img/icone.png" style="position:fixed;left:15px;top:22px;" id="back-medias"/>ARTISTES</h3>
+      <!--Ajout d'un scroll alphabétique -->
+      <div id="liste">
+        <ul>
+          <li><a href='#a'>A</a></li>
+          <li><a href='#b'>B</a></li>
+          <li><a href='#c'>C</a></li>
+          <li><a href='#d'>D</a></li>
+          <li><a href='#e'>E</a></li>
+          <li><a href='#f' style="color:#42BCE4;">F</a></li>
+          <li><a href='#g'style="color:#42BCE4;">G</a></li>
+          <li><a href='#h'>H</a></li>
+          <li><a href='#i'>I</a></li>
+          <li><a href='#j'>J</a></li>
+          <li><a href='#k'>K</a></li>
+          <li><a href='#l'>L</a></li>
+          <li><a href='#m'>M</a></li>
+          <li><a href='#n'>N</a></li>
+          <li><a href='#o'>O</a></li>
+          <li><a href='#p'>P</a></li>
+          <li><a href='#q'>Q</a></li>
+          <li><a href='#r'>R</a></li>
+          <li><a href='#s'>S</a></li>
+          <li><a href='#t'>T</a></li>
+          <li><a href='#u'>U</a></li>
+          <li><a href='#v'>V</a></li>
+          <li><a href='#w'>W</a></li>
+          <li><a href='#x'>X</a></li>
+          <li><a href='#y'>Y</a></li>
+          <li><a href='#z'>Z</a></li>
+        </ul>
+      </div>
+      <!--Fin de la liste alphabétique-->
+
+      <table width="100%">
+        <tr>
+          <td id="f" class="ease"></td>
+        </tr>
+        <tr>
+          <td id="fakearsong">
+            <div class="lettre">F</div>
+            <img src="img/covers/cover1.png"/ class="cover">
+            Fakear
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">1 album, 17 morceaux</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/covers/cover2.png"/ class="cover">
+            Flight Facilities
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">1 album, 14 morceaux</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/covers/cover3.png"/ class="cover" id="g">
+            Flume
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">2 albums, 12 morceaux</span>
+          </td>
+        </tr>
+        <tr class="décalage">
+          <td>
+            <div class="lettre">G</div>
+            <img src="img/covers/cover4.png"/ class="cover">
+            The Geek X VRV
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">1 album, 2 morceaux</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/covers/cover5.png"/ class="cover">
+            Gesaffelstein
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">1 album, 14 morceaux</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/covers/cover6.png"/ class="cover">
+            Glass Animals
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">2 albums, 26 morceaux</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/covers/cover7.png"/ class="cover" id="h">
+            Grimes
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">2 albums, 27 morceaux</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="décalage" style="padding-top: 17px;">
+            <div class="lettre">H</div>
+            <img src="img/covers/cover8.png"/ class="cover">
+            Hoosky
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">1 album, 2 morceaux</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/covers/cover9.png"/ class="cover">
+            Hyphen hyphen
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">1 album, 12 morceaux</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="décalage" style="padding-top: 21px;">
+            <div class="lettre">I</div>
+            <img src="img/covers/cover10.png"/ class="cover">
+            Iggy Azaela
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">1 album, 2 morceaux</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="img/covers/cover4.png"/ class="cover">
+            Izzy Bizu
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">1 album, 14 morceaux</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="décalage" style="padding-top: 23px;">
+            <div class="lettre">J</div>
+            <img src="img/covers/cover11.png"/ class="cover">
+            Jorja Smith
+            <br>
+            <span style="font-size:13px;color:#888888;font-style:light">1 album, 1 morceau</span>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- fin niveau 2 des dossiers plex1 -->
+  </section>
+
+  <!-- Le lecteur qui va jouer la musique -->
+  <div id="lecteur" class="hidden">
+    <div id="fondu"></div>
+    <div id="carouselicone"><img src="img/carousel.png"/></div>
+    <img src="img/albumcircle.png"/>
+    <span class="title">
+      <h1 style= "text-align:center;font-size:22px;x"><strong>Fakear</strong> - Animals</h1>
+      <h3 style="color:#E78181; margin-top:-30px">Iphone de Hugo</h3>
+      <div id="sound-cursor">
+        <img src="img/aleatoire.png"/><img src="img/fauxcurseur.png" style="padding: 0px 10px 0px 10px;"/>
+        <img src="img/boucle.png"/>
+      </div>
+      <div id="next">
+        <img src="img/Union.png"/ style="padding-right: 20px; margin-left: -20px;">
+        <img src="img/playpause.png"/ id="filtreserveur">
+        <img src="img/Union1.png"/ style="padding-left: 20px;">
+      </div>
+      <div id="roue-player">
+        <img src="img/roueplayer.png"/>
+      </div>
+    </span>
+  </div>
+
+
+
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+  <script src="main.js" charset="utf-8"></script>
+
+  <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type='text/javascript' src='js/feedback.js'></script>
+
+
+</body>
+</html>
